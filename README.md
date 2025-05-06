@@ -8,10 +8,8 @@
 
 Тесты
 #ifdef DNS_SERVER_TESTING
-
 #include <cassert>
 #include <chrono>
-
 void test_dns_cache() {
     DNSCache cache;
     
@@ -76,7 +74,6 @@ void test_dns_server() {
     
     std::cout << "DNS server tests passed!\n";
 }
-
 int main() {
 #ifdef _WIN32
     WSADATA wsaData;
@@ -92,5 +89,4 @@ int main() {
     
     return 0;
 }
-
 #endif // DNS_SERVER_TESTING
